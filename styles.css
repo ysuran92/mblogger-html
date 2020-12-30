@@ -1,7 +1,27 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 #clear {
     position: relative;
+    width: 5rem;
+    height: 3rem;
 }
 
 #logTimeButton {
     position: relative;
+    width: 10rem;
+    height: 3rem;
+    background-color: #0288d1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.fas,
+.far {
+    font-size: 25px;
+}
+
+.far {
+    color: #ffffff;
 }
