@@ -1,15 +1,17 @@
 var saved = localStorage.getItem('savedTime');
+var logTime = document.querySelector("#logTimeButton");
+var logArea = document.querySelector("#logArea");
+var clear = document.querySelector("#clear")
 
-    if (saved) {
-    document.body.innerHTML = saved;
+if (saved) {
+    logArea.innerHTML += saved;
 }
 
-var logTime = document.querySelector("#logTimeButton")
+logTime.addEventListener("click", function() {;
+    logArea.innerHTML += Date() + '<br>';
+    localStorage.setItem('savedTime', logArea.innerHTML);  
+});
 
-logTime.addEventListener('click', function (event) {
-    
-    document.body.innerHTML += Date() + '<br>';
-
-    localStorage.setItem('savedTime', document.body.innerHTML);
-    
+clear.addEventListener("click", function() {
+    logArea.innerHTML = "";
 });
