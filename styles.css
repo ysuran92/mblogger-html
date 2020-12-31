@@ -42,12 +42,12 @@ button {
 }
 
 #clear {
-    width: 5rem;
+    width: 4rem;
     height: 3rem;
 }
 
 #logTimeButton {
-    width: 10rem;
+    width: 8rem;
     height: 3rem;
     background-color: #0288d1;
     font-family: 'Raleway', sans-serif;
