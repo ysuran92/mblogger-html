@@ -1,20 +1,61 @@
 body {
     font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+button {
+    position: relative;
+    margin: 0.5rem;
+}
+
+.moonboundParagraph {
+    float: right;
+    position: relative;
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 8s ease infinite;
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 25%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #clear {
-    position: relative;
     width: 5rem;
     height: 3rem;
 }
 
 #logTimeButton {
-    position: relative;
     width: 10rem;
     height: 3rem;
     background-color: #0288d1;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+}
+
+#logArea {
+    padding: 0.5rem;
 }
 
 .fas,
